@@ -115,8 +115,14 @@ header nav li {
     animation: 1s slidefade 1s forwards;
 }
 
-#background-image {
+.background-image {
     background-image: url(../img/2.jpg);
+}
+
+.img-location {
+    position:absolute;
+    bottom:.5em;
+    left: .5em;
 }
 
 @keyframes slidefade {
