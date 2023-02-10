@@ -6,4 +6,3 @@ This project is a 9-page website for a fictional travel agency called Vacation L
 ** No live version available yet **
 
 Start Date- 2/10/23
-![image](https://user-images.githubusercontent.com/98298991/218147220-bb899ca8-5fc2-46ea-a034-c1d371bf5b84.png)
