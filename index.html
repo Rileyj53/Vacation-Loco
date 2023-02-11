@@ -8,104 +8,106 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/c25ee65fb9.js" crossorigin="anonymous"></script>
 </head>
-<body onload = "backgroundChange()" >
+<body onload="generateContent()">
+<!--<body>-->
 
 <header>
-    <h2><a href="#">Website Logo</a></h2>
+    <h2><a href="#">Vacation Loco</a></h2>
     <nav>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contacts</a></li>
+        <ul>
+            <li><a href="#">Costa Rica</a></li>
+            <li><a href="#">Panama</a></li>
+            <li><a href="#">Dominican Republic</a></li>
+            <li><a href="#">Brazil</a></li>
+            <li><a href="#">Ecuador</a></li>
+            <li><a href="#">Aruba</a></li>
+            <li><a href="#">Colombia</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
     </nav>
 </header>
 
 
 <section class="hero">
     <div class="background-image"></div>
-    <h1>Responsive Flexbox Template</h1>
-    <h3>A freebie by Tutorialzine.</h3>
-    <a href="http://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox/" class="btn">Download it Here</a>
+    <h1 class="slogan">Discover the Beauty of South America & Mexico</h1>
+    <!--    <h3>Discover the Beauty of South America & Mexico</h3>-->
+    <p class="img-location"></p>
 </section>
 
 
-<section class="our-work">
-    <h3 class="title">Some of our work</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
-    <hr>
+<section class="destinations">
+    <h3 class="title">About Our Destinations</h3>
+    <p>At Vacation Loco, we understand that travel is about more than just visiting new places, it's about creating
+        memories that last a lifetime. That's why we've curated a diverse range of destinations in South America and
+        Mexico that offer unique and immersive experiences for travelers. From the lush rainforests of Costa Rica, to
+        the vibrant energy of Brazil, and the pristine beaches of Aruba, our destinations offer a diverse range of
+        cultures, landscapes, and experiences. Whether you're looking to escape the hustle and bustle and find peace in
+        a serene natural setting, or you're seeking adventure and excitement in a bustling city, our destinations have
+        something for everyone. Experience the local food, immerse yourself in the culture, and create unforgettable
+        memories with Vacation Loco.</p>
+
+    <p>Here, we believe that travel should be an opportunity to explore new and uncharted territories, and
+        that's why we focus on destinations that are off the beaten path. From Panama, with its rich history and diverse
+        landscapes, to the colonial charm of Ecuador, our destinations offer a chance to see a side of South America and
+        Mexico that's unique and authentic. Immerse yourself in the local culture, sample the delicious and varied
+        cuisine, and experience the natural beauty of these destinations in a way that few travelers ever will. Whether
+        you're seeking adventure, relaxation, or a combination of both, our destinations offer a unique and
+        unforgettable experience for every type of traveler.</p>
 
     <ul class="grid">
-        <li class="small" style="background-image: url(assets/img/coast.jpg);"></li>
-        <li class="large" style="background-image: url(assets/img/island.jpg);"></li>
-        <li class="large" style="background-image: url(assets/img/balloon.jpg);"></li>
-        <li class="small" style="background-image: url(assets/img/mountain.jpg);"></li>
-        </div>
+        <li class="small" style="background-image: url(assets/img/x.jpg);"></li>
+        <li class="large" style="background-image: url(assets/img/x.jpg);"></li>
+        <li class="large" style="background-image: url(assets/img/x.jpg);"></li>
+        <li class="small" style="background-image: url(assets/img/x.jpg);"></li>
+        <li class="small" style="background-image: url(assets/img/x.jpg);"></li>
+        <li class="large" style="background-image: url(assets/img/x.jpg);"></li>
+        </ul>
+
+    <h3 class="title" id="nav">Select a destination to learn more</h3>
+    <nav>
+    <ul>
+        <li><a href="#">Costa Rica</a></li>
+        <li><a href="#">Panama</a></li>
+        <li><a href="#">Dominican Republic</a></li>
+        <li><a href="#">Brazil</a></li>
+        <li><a href="#">Ecuador</a></li>
+        <li><a href="#">Aruba</a></li>
+        <li><a href="#">Colombia</a></li>
+    </ul>
+    </nav>
 </section>
 
+<section class="testimonials">
+    <h3 class="title">What People are Saying</h3>
 
-<section class="features">
-    <h3 class="title">Features and services</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
-    <hr>
+    <p class="quote" id="testimonial1"></p>
+    <p class="author" id="author1"></p>
 
-    <ul class="grid">
-        <li>
-            <i class="fa fa-camera-retro"></i>
-            <h4>Photography</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-        </li>
-        <li>
-            <i class="fa fa-cubes"></i>
-            <h4>Web Development</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-        </li>
-        <li>
-            <i class="fa fa-newspaper-o"></i>
-            <h4>Content Editing</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-        </li>
-        </div>
-</section>
+    <p class="quote" id="testimonial2"></p>
+    <p class="author" id="author2"></p>
 
-
-<section class="reviews">
-    <h3 class="title">What others say:</h3>
-
-    <p class="quote">Mauris sit amet mauris a arcu eleifend ultricies eget ut dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-    <p class="author">— Patrick Farrell</p>
-
-    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
-    <p class="author">— George Smith</p>
-
-    <p class="quote">Donec commodo dolor augue, vitae faucibus tortor tincidunt in. Aliquam vitae leo quis mi pulvinar ornare. Integer eu iaculis metus.</p>
-    <p class="author">— Kevin Blake</p>
-
-
-</section>
-
-
-<section class="contact">
-    <h3 class="title">Join our newsletter</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
-    <hr>
-
-    <form>
-        <input type="email" placeholder="Email">
-        <a href="#" class="btn">Subscribe now</a>
-    </form>
+    <p class="quote" id="testimonial3"></p>
+    <p class="author" id="author3"></p>
+    <!--    <p>A Project By Riley Jacobson</p>-->
 </section>
 
 <footer>
+    <div>
+        <p class="contact" id="email">contact@vacationloco.com</p>
+        <p id="phone" class="contact">(768) 845-0832</p>
+    </div>
     <ul>
-        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-        <li><a href="#"><i class="fa fa-snapchat-square"></i></a></li>
-        <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
-        <li><a href="#"><i class="fa fa-github-square""></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
     </ul>
-    <p>Made by <a href="http://tutorialzine.com/" target="_blank">tutorialzine</a>. images courtesy to <a href="http://unsplash.com/" target="_blank">unsplash</a>.</p>
-    <p>No attribution required. you can remove this footer.</p>
+
+    <div>
+        <p class="copyright">Copyright © 2023 Vacation Loco</p>
+        <p class="copyright">A Project By Riley Jacobson</p>
+    </div>
 </footer>
 </body>
 </html>
