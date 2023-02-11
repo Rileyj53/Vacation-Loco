@@ -17,4 +17,13 @@ function backgroundChange() {
 
 }
 
-backgroundChange()
+
+.background-image {
+    background-image: url(../img/2.jpg);
+}
+
+.img-location {
+    position:absolute;
+    bottom:.5em;
+    left: .5em;
+}
