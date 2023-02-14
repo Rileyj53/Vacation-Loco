@@ -49,4 +49,3 @@ export const pictures = [
         slogan: 'Embrace the Beauty and Diversity of Colombia'
     },
 ];
-

@@ -2,7 +2,8 @@
   "name": "vacation-loco",
   "version": "1.0.0",
   "description": "Web project for CIS300 in spring 2023",
-  "main": "index.js",
+  "main": "assets/js/index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
