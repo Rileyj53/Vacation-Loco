@@ -1,63 +1,70 @@
-function generateContent(page) {
-        switch (page) {
-            case 'costa':
-                page = '0';
-                break;
-            case 'panama':
-                page = '1';
-                break;
-            case 'dominican':
-                page = '2';
-                break;
-            case 'brazil':
-                page = '3';
-                break;
-            case 'ecuador':
-                page = '4';
-                break;
-            case 'aruba':
-                page = '5';
-                break;
-            case 'colombia':
-                page = '6';
-                break;
-            default:
-                page = null;
-                break;
-        }
+function loadIndex() {
+    generateTestimonials()
+    generateBackground()
+}
 
-        let randomImg;
-        if (!page) {
-            randomImg = Math.floor(Math.random() * pictures.length);
-        } else {
-            randomImg = parseInt(page);
-        }
-        // console.log(randomImg)
-        // console.log(page)
-
-        const {imgUrl, imgLocation, slogan} = pictures[randomImg];
-        // const {imgUrl, imgLocation, slogan} = pictures[0];
-
-        const selectedTestimonials = [];
-        for (let i = 0; i < 4; i++) {
-            let testimonial;
-            do {
-                testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
-            } while (selectedTestimonials.includes(testimonial));
-            selectedTestimonials.push(testimonial);
-        }
-
-        document.getElementById("testimonial1").innerHTML = selectedTestimonials[0].testimonial;
-        document.getElementById("author1").innerHTML = selectedTestimonials[0].author;
-        document.getElementById("testimonial2").innerHTML = selectedTestimonials[1].testimonial;
-        document.getElementById("author2").innerHTML = selectedTestimonials[1].author;
-        document.getElementById("testimonial3").innerHTML = selectedTestimonials[2].testimonial;
-        document.getElementById("author3").innerHTML = selectedTestimonials[2].author;
-
-        document.getElementsByClassName("background-image")[0].style.backgroundImage = imgUrl;
-        document.getElementsByClassName("img-location")[0].innerHTML = imgLocation;
-        document.getElementsByClassName("slogan")[0].innerHTML = slogan;
+function generateTestimonials() {
+    const selectedTestimonials = [];
+    for (let i = 0; i < 4; i++) {
+        let testimonial;
+        do {
+            testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
+        } while (selectedTestimonials.includes(testimonial));
+        selectedTestimonials.push(testimonial);
     }
+
+    document.getElementById("testimonial1").innerHTML = selectedTestimonials[0].testimonial;
+    document.getElementById("author1").innerHTML = selectedTestimonials[0].author;
+    document.getElementById("testimonial2").innerHTML = selectedTestimonials[1].testimonial;
+    document.getElementById("author2").innerHTML = selectedTestimonials[1].author;
+    document.getElementById("testimonial3").innerHTML = selectedTestimonials[2].testimonial;
+    document.getElementById("author3").innerHTML = selectedTestimonials[2].author;
+}
+
+function generateBackground(page) {
+    switch (page) {
+        case 'costa':
+            page = '0';
+            break;
+        case 'panama':
+            page = '1';
+            break;
+        case 'dominican':
+            page = '2';
+            break;
+        case 'brazil':
+            page = '3';
+            break;
+        case 'ecuador':
+            page = '4';
+            break;
+        case 'aruba':
+            page = '5';
+            break;
+        case 'colombia':
+            page = '6';
+            break;
+        default:
+            page = null;
+            break;
+    }
+
+    let randomImg;
+    if (!page) {
+        randomImg = Math.floor(Math.random() * pictures.length);
+    } else {
+        randomImg = parseInt(page);
+    }
+    // console.log(randomImg)
+    // console.log(page)
+
+    const {imgUrl, imgLocation, slogan} = pictures[randomImg];
+    // const {imgUrl, imgLocation, slogan} = pictures[0];
+
+    document.getElementsByClassName("background-image")[0].style.backgroundImage = imgUrl;
+    document.getElementsByClassName("img-location")[0].innerHTML = imgLocation;
+    document.getElementsByClassName("slogan")[0].innerHTML = slogan;
+}
 
 const pictures = [
     {
