@@ -66,18 +66,21 @@ function generateBackground(page) {
     document.getElementsByClassName("slogan")[0].innerHTML = slogan;
 }
 
-const pictures = [
+const pictures = [ // Slowly replacing these with the images url instead of downloading them
     {
-        imgUrl: 'url(assets/img/0.webp)',
+        imgUrl: 'url(https://images.unsplash.com/photo-1580094333632-438bdc04f79f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80)',
+        // imgUrl: 'url(assets/img/0.webp)',
         // Photo from unsplash.com
         // Photographer: Cosmic Timetraveler
         imgLocation: 'Costa Rica',
         slogan: 'Discover the Pura Vida of Costa Rica'
     },
     {
-        imgUrl: 'url(assets/img/1.webp)',
+        imgUrl: 'url(https://images.unsplash.com/photo-1580756169501-a0df53f8b91d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80)',
+        // imgUrl: 'url(assets/img/1.webp)',
+
         // Photo from unsplash.com
-        // Photographer: Angel Silva
+        // Photographer: Chema Photo
         imgLocation: 'Panama',
         slogan: 'Experience the Beauty and Adventure of Panama'
     },
