@@ -1,3 +1,6 @@
+// Don't delete this, wont work without it
+window.loadIndex = loadIndex;
+
 function loadIndex() {
     generateTestimonials()
     generateBackground()
@@ -21,7 +24,7 @@ function generateTestimonials() {
     document.getElementById("author3").innerHTML = selectedTestimonials[2].author;
 }
 
-function generateBackground(page) {
+export function generateBackground(page) {
     switch (page) {
         case 'costa':
             page = '0';
@@ -163,3 +166,61 @@ const testimonials = [
         testimonial: 'The excursions in Panama were the highlight of my trip with Vacation Loco. However, the food was a little underwhelming and the accommodations were basic. Nevertheless, I would still recommend this destination and travel agency to others looking for a unique travel experience.',
     },
 ]
+
+// const costaImg = [
+//     {
+//         imageUrl: 'https://images.unsplash.com/photo-1580094333632-438bdc04f79f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+//     },
+//     {
+//         imageUrl: 'https://plus.unsplash.com/premium_photo-1669754898242-23079dcea728?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+//     },
+//     {
+//         imageUrl: 'https://images.unsplash.com/photo-1552727131-5fc6af16796d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1949&q=80',
+//     },
+//     {
+//         imageUrl: 'https://plus.unsplash.com/premium_photo-1669261232192-6c625a80375e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+//     },
+//     {
+//         imageUrl: 'https://images.unsplash.com/photo-1552980870-139c7b393f0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
+//     },
+//
+// ]
+//
+// function shuffleArray(array) {
+//     for (let i = array.length - 1; i > 0; i--) {
+//         const j = Math.floor(Math.random() * (i + 1));
+//         [array[i], array[j]] = [array[j], array[i]];
+//     }
+// }
+//
+// function setRandomImages(imageArray) {
+//     shuffleArray(imageArray);
+//     for (let i = 0; i < Math.min(imageArray.length, 4); i++) {
+//         document.getElementById(`image${i + 1}`).style.backgroundImage = `url(${imageArray[i].imageUrl})`;
+//     }
+// }
+//
+// const imageArrays = {
+//     costa: costaImg,
+//     // panama: panamaImg,
+//     // dominican: dominicanImg,
+//     // brazil: brazilImg,
+//     // ecuador: ecuadorImg,
+//     // aruba: arubaImg,
+//     // colombia: colombiaImg,
+// };
+//
+// function setDestImgs(place) {
+//     const imageArray = imageArrays[place];
+//     if (imageArray) {
+//         setRandomImages(imageArray);
+//         generateBackground(place);
+//     }
+// }
+//
+//
+// function testFuck(place) {
+//     console.log(place + "Img")
+// }
+//
+// console.log(typeof (imageArrays['costa']))

@@ -7,10 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <script src="../js/index.js"></script>
+    <script type="module" src="../js/destinations.js"></script>
+    <script type="module" src="../js/index.js"></script>
     <script src="https://kit.fontawesome.com/c25ee65fb9.js" crossorigin="anonymous"></script>
 </head>
-<body onload="generateBackground('costa')">
+<body onload="setDestImgs('costa')">
 <!--<body>-->
 
 <header>
@@ -62,10 +63,10 @@
         resorts where visitors can unwind and take in the stunning scenery.</p>
 
     <ul class="grid">
-        <li class="small" style="background-image: url(assets/img/x.jpg);"></li>
-        <li class="large" style="background-image: url(assets/img/x.jpg);"></li>
-        <li class="large" style="background-image: url(assets/img/x.jpg);"></li>
-        <li class="small" style="background-image: url(assets/img/x.jpg);"></li>
+        <li id="image1" class="small" style="background-image: url();"></li>
+        <li id="image2" class="large" style="background-image: url();"></li>
+        <li id="image3" class="large" style="background-image: url();"></li>
+        <li id="image4" class="small" style="background-image: url();"></li>
     </ul>
 </section>
 
@@ -139,8 +140,8 @@
         local community and learn more about the unique and diverse culture of Costa Rica.</p>
 
     <ul class="grid">
-        <li class="small" style="background-image: url(assets/img/x.jpg);"></li>
         <li class="large" style="background-image: url(assets/img/x.jpg);"></li>
+        <li class="small" style="background-image: url(assets/img/x.jpg);"></li>
     </ul>
 
     <h1>Relaxation</h1>
@@ -199,8 +200,8 @@
 
 
     <ul class="grid">
+        <li class="large" style="background-image: url(../img/0-1.jpg);"></li>
         <li class="small" style="background-image: url(assets/img/x.jpg);"></li>
-        <li class="large" style="background-image: url(assets/img/x.jpg);"></li>
     </ul>
 
 </section>
