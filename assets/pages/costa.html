@@ -211,8 +211,78 @@
 </section>
 
 <section class="contactSEC">
-    <h3 class="title">Form Section</h3>
-    <p>Form Goes here</p>
+    <div class="success-message">
+        <h1 id='success1'></h1>
+        <h1 id='success2'></h1>
+    </div>
+    <div class="form-container">
+        <form class="contact-form">
+            <div class="half left">
+
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Name">
+
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Email address">
+
+                <label for="phone"></label>
+                <input type="text" id="phone" placeholder="Phone Number">
+
+                <p>How many nights?</p>
+                <label for="days"></label>
+                <input type="number" id="days" name="days" min="8" max="21" step="2" value="8">
+
+                <p>How many people?</p>
+                <label for="people"></label>
+                <input type="number" id="people" name="people" min="2" max="8" step="1" value="2">
+            </div>
+            <div class="half right">
+                <label class="radio-label">
+                    <input type="radio" class="radio-input" name="radio" value="Costa Rica" id="radio" checked>
+                    <span class="radio-design"></span>
+                    <span class="radio-text">Costa Rica</span>
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" class="radio-input" name="radio" value="Panama" id="radio">
+                    <span class="radio-design"></span>
+                    <span class="radio-text">Panama</span>
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" class="radio-input" name="radio" value="Dominican Republic" id="radio">
+                    <span class="radio-design"></span>
+                    <span class="radio-text">Dominican Republic</span>
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" class="radio-input" name="radio" value="Brazil" id="radio">
+                    <span class="radio-design"></span>
+                    <span class="radio-text">Brazil</span>
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" class="radio-input" name="radio" value="Ecuador" id="radio">
+                    <span class="radio-design"></span>
+                    <span class="radio-text">Ecuador</span>
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" class="radio-input" name="radio" value="Aruba" id="radio">
+                    <span class="radio-design"></span>
+                    <span class="radio-text">Aruba</span>
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" class="radio-input" name="radio" value="Colombia" id="radio">
+                    <span class="radio-design"></span>
+                    <span class="radio-text">Colombia</span>
+                </label>
+            </div>
+            <input type="submit" class="submit" value="Submit" id="submit">
+        </form>
+    </div>
+    <script src="./js/app.js"></script>
 </section>
 
 <footer>

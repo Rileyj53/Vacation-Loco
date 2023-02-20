@@ -5,6 +5,8 @@ Section2 = #f9fdfd
 Footer = #169c91
 Dark Text = #20202d
 Light Text = #f9fdfd
+Radio Button = #d99840
+Submit Button = #7F2622
 -------------*/
 
 /*-------------
@@ -57,9 +59,9 @@ hr{
 }
 
 section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
     /* top and bottom | left and right */
     padding: 100px 100px;
 }
@@ -123,6 +125,14 @@ header {
     padding: 35px 100px 0;
 }
 
+header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 header h2 {
     font-family: 'Roboto', sans-serif;
 }
@@ -183,6 +193,9 @@ header h2 a {
     min-height: 100vh;
     color: #f9fdfd;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero .background-image{
@@ -261,6 +274,9 @@ header h2 a {
 
 .destinations{
     background-color: #fefcf9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .destinations p {
@@ -336,6 +352,9 @@ header h2 a {
 .testimonials section {
     max-width: 100%;
     color: #20202d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .testimonials{
@@ -386,6 +405,12 @@ footer{
     color: #f9fdfd;
     background-color: #169c91;
     padding: 20px 10%;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact {
@@ -441,6 +466,9 @@ footer p a{
 
 .destination{
     background-color: #fefcf9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .destination p {
@@ -509,6 +537,9 @@ footer p a{
 
 .activities{
     background-color: #f9fdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .activities p {
@@ -593,6 +624,134 @@ footer p a{
        Contact
 ---------------------*/
 
+/* Sets the width of the section and the background color */
 .contactSEC {
     background-color: #f9fdfd;
+}
+
+/* floats the <p> to the left */
+.contactSEC p {
+    float: left;
+}
+
+form {
+    max-width: 85%;
+    margin: 20px auto;
+}
+
+/* styles the form inputs and textareas with a border radius, padding, width, margin and box-shadow, and removes the default border and outline. */
+form input,
+form textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* styles the form inputs and textareas with a box-shadow when they receive focus */
+form input:focus {
+    box-shadow: 0 0px 2px #7f2622 !important;
+}
+
+/* styles the form submit button with a background color, border radius, padding, width, margin, box-shadow, and cursor */
+form #submit {
+    color: white;
+    background: #7f2622;
+    cursor: pointer;
+}
+
+/* styles the form submit button with a box-shadow when hovered */
+form #submit:hover {
+    box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+
+/* setup the split view */
+.half {
+    float: left;
+    width: 40%;
+    margin-bottom: 1em;
+}
+
+/* float to the right */
+.right {
+    float: right;
+    width: 40%;
+}
+
+/* float to the left */
+.left {
+    margin-right: 2%;
+}
+
+/* styles the radio-label element with a flex display, aligns its contents to the center, gives it a rounded border-radius, padding and margin, a cursor pointer and a transition effect of 0.3 seconds*/
+.radio-label {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    padding: 10px 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* styles the radio-label element with a background color when hovered */
+.radio-label:hover,
+.radio-label:focus-within {
+    background: hsla(0, 0%, 80%, 0.14);
+}
+
+/* hides the radio-input element */
+.radio-input {
+    position: absolute;
+    opacity: 1;
+    z-index: -1;
+}
+
+/* styles the radio-design element with a width, height, border-radius, background color and position */
+.radio-design {
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+
+    background: #d99840;
+    position: relative;
+}
+
+/* styles a pseudo-element for the radio-design element to create a light gray circular background with a 10% larger size and a transition effect of 0.3 seconds. */
+.radio-design::before {
+    content: '';
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: hsl(0, 0%, 90%);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* styles the radio-design element with a transform effect of 0 when the radio-input element is checked */
+.radio-input:checked + .radio-design::before {
+    transform: scale(0);
+}
+
+/* styles the radio-text element with a color, margin-left, letter-spacing, font-size, font-weight and a transition effect of 0.3 seconds */
+.radio-text {
+    color: hsl(0, 0%, 60%);
+    margin-left: 15px;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.success-message {
+    display: none;
+}
+
+.contact-form {
+    display: block;
 }
