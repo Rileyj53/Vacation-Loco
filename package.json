@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Rileyj53/Vacation-Loco/issues"
   },
-  "homepage": "https://github.com/Rileyj53/Vacation-Loco#readme"
+  "homepage": "https://github.com/Rileyj53/Vacation-Loco#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
