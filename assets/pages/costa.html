@@ -206,15 +206,64 @@
 </section>
 
 <section class="packages">
-    <h3 class="title">Table Section</h3>
-    <p>Table goes here</p>
+    <h3 class="title">Available Travel Packages</h3>
+    <p>Vacation Loco offers a variety of travel packages for groups of 2, 4, 6, or 8 people, with options for 6, 11, 16,
+        or 21-night stays. These packages include a range of activities such as adventure, relaxation, culture, and
+        nature. If you are interested in customizing your trip, feel free to contact us for further information and
+        accommodations.</p>
+    <div class="table-container">
+        <table>
+            <thead>
+            <tr>
+                <th rowspan="2">People</th>
+                <th colspan="4">Number of Nights</th>
+            </tr>
+            <tr>
+                <th>6</th>
+                <th>11</th>
+                <th>16</th>
+                <th>21</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>2</td>
+                <td>$50</td>
+                <td>$90</td>
+                <td>$130</td>
+                <td>$170</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>$75</td>
+                <td>$135</td>
+                <td>$195</td>
+                <td>$255</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>$100</td>
+                <td>$180</td>
+                <td>$260</td>
+                <td>$340</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>$125</td>
+                <td>$225</td>
+                <td>$325</td>
+                <td>$425</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </section>
 
 <section class="contactSEC">
-    <div class="success-message">
-        <h1 id='success1'></h1>
-        <h1 id='success2'></h1>
-    </div>
+    <h3 class="title">Contact us to schedule your dream trip</h3>
+    <p>If you have any questions or would like to make a reservation, please don't hesitate to contact us. Our friendly
+        and knowledgeable staff are always happy to help you plan your dream vacation in Costa Rica. You can reach us
+        via phone, email, or by filling out the contact form on our website. We look forward to hearing from you!</p>
     <div class="form-container">
         <form class="contact-form" onsubmit="formTest()">
             <div class="half left">
@@ -230,7 +279,7 @@
 
                 <p>How many nights?</p>
                 <label for="days"></label>
-                <input type="number" id="days" name="days" min="8" max="21" step="2" value="8">
+                <input type="number" id="days" name="days" min="6" max="21" step="5" value="6">
 
                 <p>How many people?</p>
                 <label for="people"></label>

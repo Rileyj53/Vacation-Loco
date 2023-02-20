@@ -4,10 +4,14 @@ Section1 = #fefcf9
 Section2 = #f9fdfd
 Footer = #169c91
 Dark Text = #20202d
+Medium Text = #4a4a68
 Light Text = #f9fdfd
 Radio Button = #d99840
 Submit Button = #7F2622
--------------*/
+Table Row Even = #fbf4e9
+Table Row Odd = #ecf9f9
+Table Header = #7F2622
+ */
 
 /*-------------
  	General
@@ -39,23 +43,6 @@ a{
 
 a:hover{
     opacity: 1;
-}
-
-a.btn{
-    color: #fff;
-    border-radius: 4px;
-    text-transform: uppercase;
-    background-color: #2196F3;
-    font-weight: 800;
-    text-align: center;
-}
-
-hr{
-    width: 150px;
-    height: 2px;
-    background-color: #2196F3;
-    border: 0;
-    margin-bottom: 80px;
 }
 
 section{
@@ -616,8 +603,84 @@ footer p a{
  	   Packages
 ---------------------*/
 
+/* Set background color for packages section */
 .packages {
     background-color: #fefcf9;
+}
+
+/* Set max width and center packages container paragraphs */
+.packages p {
+    max-width: 85%;
+    text-align: center;
+    /* top and bottom | left and right */
+    padding: 10px 20px;
+    margin: 0 auto;
+    line-height: 2;
+}
+
+/* Set max width and center table container */
+.table-container {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Set basic table styles */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    border: none;
+    padding: 10px;
+}
+
+/* Style for table headers and cells*/
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: none;
+}
+
+/* Style for table headers */
+th {
+    background-color: #7F2622;
+    color: white;
+    font-size: 1.2em;
+    padding-right: 10px;
+}
+
+/* Style for first column cells */
+tr td:first-child {
+    background-color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Style for even numbered rows and odd numbered columns */
+tr:nth-child(even) td:nth-child(odd) {
+    background-color: #ecf9f9;
+    padding: 15px;
+}
+
+/* Style for odd numbered rows and even numbered columns */
+tr:nth-child(odd) td:nth-child(even) {
+    background-color: #fbf4e9;
+    padding: 15px;
+}
+
+/* Style for even numbered rows and even numbered columns */
+tr:nth-child(even) td:nth-child(even) {
+    background-color: #fbf4e9;
+    padding: 15px;
+}
+
+/* Style for odd numbered rows and odd numbered columns */
+tr:nth-child(odd) td:nth-child(odd) {
+    background-color: #ecf9f9;
+    padding: 15px;
 }
 
 /*--------------------
@@ -627,10 +690,20 @@ footer p a{
 /* Sets the width of the section and the background color */
 .contactSEC {
     background-color: #f9fdfd;
+    /*display: flex;*/
+}
+
+.contactSEC p {
+    max-width: 85%;
+    text-align: center;
+    /* top and bottom | left and right */
+    padding: 5px 20px;
+    margin: 0 auto;
+    line-height: 2;
 }
 
 /* floats the <p> to the left */
-.contactSEC p {
+form p {
     float: left;
 }
 
@@ -654,7 +727,7 @@ form textarea {
 
 /* styles the form inputs and textareas with a box-shadow when they receive focus */
 form input:focus {
-    box-shadow: 0 0px 2px #7f2622 !important;
+    box-shadow: 0 0 2px #7f2622 !important;
 }
 
 /* styles the form submit button with a background color, border radius, padding, width, margin, box-shadow, and cursor */
@@ -749,12 +822,4 @@ form #submit:hover {
     font-size: 15px;
     font-weight: 900;
     transition: 0.3s;
-}
-
-.success-message {
-    display: none;
-}
-
-.contact-form {
-    display: block;
 }
