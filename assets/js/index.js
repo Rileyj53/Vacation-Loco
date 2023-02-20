@@ -3,7 +3,7 @@ function loadIndex() {
     generateBackground()
 }
 
-function generateTestimonials() {
+function generateTestimonials()  {
     const selectedTestimonials = [];
     for (let i = 0; i < 4; i++) {
         let testimonial;
