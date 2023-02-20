@@ -707,7 +707,10 @@ form #submit:hover {
 /* hides the radio-input element */
 .radio-input {
     position: absolute;
-    opacity: 1;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
     z-index: -1;
 }
 
