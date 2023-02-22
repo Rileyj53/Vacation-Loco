@@ -1,7 +1,7 @@
 /*-------------
  	Colors
-Section1 = #fefcf9
-Section2 = #f9fdfd
+Even Sections = #fefcf9
+Odd Sections = #f9fdfd
 Footer = #169c91
 Dark Text = #20202d
 Medium Text = #4a4a68
@@ -51,6 +51,15 @@ section{
     /*align-items: center;*/
     /* top and bottom | left and right */
     padding: 100px 100px;
+}
+
+section:not(.hero):nth-child(even) {
+    background-color: #fefcf9;
+}
+
+/* style odd sections */
+section:not(.hero):nth-child(odd) {
+    background-color: #f9fdfd;
 }
 
 @media (max-width: 1000px){
@@ -185,6 +194,10 @@ header h2 a {
     align-items: center;
 }
 
+.slogan {
+    color: #f9fdfd;
+}
+
 .hero .background-image{
     /*background-image: url(../img/0-1.jpg);*/
     position: absolute;
@@ -260,7 +273,7 @@ header h2 a {
 ---------------------*/
 
 .destinations{
-    background-color: #fefcf9;
+    /*background-color: #fefcf9;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,10 +355,6 @@ header h2 a {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.testimonials{
-    background-color: #f9fdfd;
 }
 
 .testimonials .quote{
@@ -452,7 +461,7 @@ footer p a{
 ---------------------*/
 
 .destination{
-    background-color: #fefcf9;
+    /*background-color: #fefcf9;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -523,7 +532,7 @@ footer p a{
 ---------------------*/
 
 .activities{
-    background-color: #f9fdfd;
+    /*background-color: #f9fdfd;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -602,11 +611,6 @@ footer p a{
 /*--------------------
  	   Packages
 ---------------------*/
-
-/* Set background color for packages section */
-.packages {
-    background-color: #fefcf9;
-}
 
 /* Set max width and center packages container paragraphs */
 .packages p {
@@ -688,10 +692,6 @@ tr:nth-child(odd) td:nth-child(odd) {
 ---------------------*/
 
 /* Sets the width of the section and the background color */
-.contactSEC {
-    background-color: #f9fdfd;
-    /*display: flex;*/
-}
 
 .contactSEC p {
     max-width: 85%;
@@ -822,4 +822,49 @@ form #submit:hover {
     font-size: 15px;
     font-weight: 900;
     transition: 0.3s;
+}
+
+/*--------------------
+       Itinerary
+---------------------*/
+.itinerary {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.itineraryLeft, .itineraryRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itineraryLeft {
+    width: 45%;
+    float: left;
+    padding: 20px;
+}
+
+.itineraryRight {
+    width: 45%;
+    float: right;
+    padding: 20px;
+}
+
+.itineraryH2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #4a4a68;
+}
+
+h1 {
+    display: inline;
+    flex-wrap: nowrap;
+    color: #4a4a68;
+    text-transform: capitalize;
+    font: bold 32px 'Roboto', sans-serif;
+    margin-bottom: 35px;
+    text-align: center;
 }

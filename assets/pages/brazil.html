@@ -10,7 +10,7 @@
     <script src="../js/index.js"></script>
     <script src="https://kit.fontawesome.com/c25ee65fb9.js" crossorigin="anonymous"></script>
 </head>
-<body onload="generateBackground('brazil')">
+<body onload="setDestImgs('brazil')">
 <!--<body>-->
 
 <header>
@@ -43,7 +43,7 @@
         Nicaragua to the north and Panama to the south, Costa Rica is home to a diverse range of ecosystems, from
         pristine beaches and tropical rainforests to towering mountains and active volcanoes.</p>
 
-    <p>One of the most unique aspects of Costa Rican culture is the country's strong commitment to conservation and
+    <p>One of the unique aspects of Costa Rican culture is the country's strong commitment to conservation and
         sustainability. Costa Rica has made significant efforts to protect its natural resources, including its
         impressive biodiversity, and has established numerous protected areas, such as national parks and wildlife
         reserves. Visitors to Costa Rica can witness the country's commitment to sustainability firsthand by exploring
@@ -62,10 +62,10 @@
         resorts where visitors can unwind and take in the stunning scenery.</p>
 
     <ul class="grid">
-        <li class="small" style="background-image: url(assets/img/x.jpg);"></li>
-        <li class="large" style="background-image: url(assets/img/x.jpg);"></li>
-        <li class="large" style="background-image: url(assets/img/x.jpg);"></li>
-        <li class="small" style="background-image: url(assets/img/x.jpg);"></li>
+        <li id="image1" class="small" style="background-image: url();"></li>
+        <li id="image2" class="large" style="background-image: url();"></li>
+        <li id="image3" class="large" style="background-image: url();"></li>
+        <li id="image4" class="small" style="background-image: url();"></li>
     </ul>
 </section>
 
@@ -112,8 +112,14 @@
         Rica is nothing short of unforgettable.</p>
 
     <ul class="grid">
-        <li class="small" style="background-image: url(assets/img/x.jpg);"></li>
-        <li class="large" style="background-image: url(assets/img/x.jpg);"></li>
+        <!--Photo from unsplash.com-->
+        <!--Photographer: Tom Podmore-->
+        <li class="small"
+            style="background-image: url(https://images.unsplash.com/photo-1656845088161-948c617420d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80);"></li>
+        <!--Photo from unsplash.com-->
+        <!--Photographer: Leslie Cross-->
+        <li class="large"
+            style="background-image: url(https://images.unsplash.com/photo-1587493513878-d68611233b03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80);"></li>
     </ul>
 
     <h1>Culture</h1>
@@ -139,8 +145,13 @@
         local community and learn more about the unique and diverse culture of Costa Rica.</p>
 
     <ul class="grid">
-        <li class="small" style="background-image: url(assets/img/x.jpg);"></li>
-        <li class="large" style="background-image: url(assets/img/x.jpg);"></li>
+        <!--Photo from unsplash.com-->
+        <!--Photographer: Ricardo Arce-->
+        <li class="large"
+            style="background-image: url(https://images.unsplash.com/photo-1580829185826-4b78b69ccc69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80);"></li>
+        <!--Photo from unsplash.com-->
+        <!--Photographer: Dana Fallentine-->
+        <li class="small" style="background-image: url(https://images.unsplash.com/photo-1578444872448-a2d5ca6dd61d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80);"></li>
     </ul>
 
     <h1>Relaxation</h1>
@@ -169,8 +180,12 @@
         rejuvenate.</p>
 
     <ul class="grid">
-        <li class="small" style="background-image: url(assets/img/x.jpg);"></li>
-        <li class="large" style="background-image: url(assets/img/x.jpg);"></li>
+        <!--Photo from unsplash.com-->
+        <!--Photographer: Selina Bubendorfer-->
+        <li class="small" style="background-image: url(https://images.unsplash.com/photo-1602190629358-31a50de315e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80);"></li>
+        <!--Photo from unsplash.com-->
+        <!--Photographer: Mike Swigunski-->
+        <li class="large" style="background-image: url(https://images.unsplash.com/photo-1590047301995-bba02b030fa5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80);"></li>
     </ul>
 
     <h1>Nature</h1>
@@ -199,20 +214,143 @@
 
 
     <ul class="grid">
-        <li class="small" style="background-image: url(assets/img/x.jpg);"></li>
-        <li class="large" style="background-image: url(assets/img/x.jpg);"></li>
+        <!--Photo from unsplash.com-->
+        <!--Photographer: Samuel Charron-->
+        <li class="large" style="background-image: url(https://images.unsplash.com/photo-1519177827-eaba5b224092?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);"></li>
+        <!--Photo from unsplash.com-->
+        <!--Photographer: Etienne Delorieux-->
+        <li class="small" style="background-image: url(https://images.unsplash.com/photo-1580676875879-f20086f1e729?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80);"></li>
     </ul>
 
 </section>
 
 <section class="packages">
-    <h3 class="title">Table Section</h3>
-    <p>Table goes here</p>
+    <h3 class="title">Available Travel Packages</h3>
+    <p>Vacation Loco offers a variety of travel packages for groups of 2, 4, 6, or 8 people, with options for 6, 11, 16,
+        or 21-night stays. These packages include a range of activities such as adventure, relaxation, culture, and
+        nature. If you are interested in customizing your trip, feel free to contact us for further information and
+        accommodations.</p>
+    <div class="table-container">
+        <table>
+            <thead>
+            <tr>
+                <th rowspan="2">People</th>
+                <th colspan="4">Number of Nights</th>
+            </tr>
+            <tr>
+                <th>6</th>
+                <th>11</th>
+                <th>16</th>
+                <th>21</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>2</td>
+                <td>$50</td>
+                <td>$90</td>
+                <td>$130</td>
+                <td>$170</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>$75</td>
+                <td>$135</td>
+                <td>$195</td>
+                <td>$255</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>$100</td>
+                <td>$180</td>
+                <td>$260</td>
+                <td>$340</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>$125</td>
+                <td>$225</td>
+                <td>$325</td>
+                <td>$425</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </section>
 
 <section class="contactSEC">
-    <h3 class="title">Form Section</h3>
-    <p>Form Goes here</p>
+    <h3 class="title">Contact us to schedule your dream trip</h3>
+    <p>If you have any questions or would like to make a reservation, please don't hesitate to contact us. Our friendly
+        and knowledgeable staff are always happy to help you plan your dream vacation in Costa Rica. You can reach us
+        via phone, email, or by filling out the contact form on our website. We look forward to hearing from you!</p>
+    <div class="form-container">
+        <form class="contact-form" onsubmit="formTest()">
+            <div class="half left">
+
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Name">
+
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Email address">
+
+                <label for="phone"></label>
+                <input type="text" id="phone" placeholder="Phone Number">
+
+                <p>How many nights?</p>
+                <label for="days"></label>
+                <input type="number" id="days" name="days" min="6" max="21" step="5" value="6">
+
+                <p>How many people?</p>
+                <label for="people"></label>
+                <input type="number" id="people" name="people" min="2" max="8" step="1" value="2">
+            </div>
+            <div class="half right">
+                <label class="radio-label">
+                    <input type="radio" class="radio-input" name="radio" value="Costa Rica" id="radio" checked>
+                    <span class="radio-design"></span>
+                    <span class="radio-text">Costa Rica</span>
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" class="radio-input" name="radio" value="Panama" id="radio">
+                    <span class="radio-design"></span>
+                    <span class="radio-text">Panama</span>
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" class="radio-input" name="radio" value="Dominican Republic" id="radio">
+                    <span class="radio-design"></span>
+                    <span class="radio-text">Dominican Republic</span>
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" class="radio-input" name="radio" value="Brazil" id="radio">
+                    <span class="radio-design"></span>
+                    <span class="radio-text">Brazil</span>
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" class="radio-input" name="radio" value="Ecuador" id="radio">
+                    <span class="radio-design"></span>
+                    <span class="radio-text">Ecuador</span>
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" class="radio-input" name="radio" value="Aruba" id="radio">
+                    <span class="radio-design"></span>
+                    <span class="radio-text">Aruba</span>
+                </label>
+
+                <label class="radio-label">
+                    <input type="radio" class="radio-input" name="radio" value="Colombia" id="radio">
+                    <span class="radio-design"></span>
+                    <span class="radio-text">Colombia</span>
+                </label>
+            </div>
+            <input type="submit" class="submit" value="Submit" id="submit">
+
+        </form>
+    </div>
 </section>
 
 <footer>
