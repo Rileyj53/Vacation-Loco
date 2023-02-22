@@ -98,7 +98,7 @@ const pictures = [ // Slowly replacing these with the images url instead of down
         slogan: 'Escape to the Sun-Soaked Beaches of the Dominican Republic'
     },
     {
-        imgUrl: 'url(assets/img/3.webp)',
+        imgUrl: 'url(https://images.unsplash.com/photo-1518639192441-8fce0a366e2e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80)',
         // Photo from unsplash.com
         // Photographer: Raphael Nogueira
         imgLocation: 'Brazil',
@@ -176,7 +176,7 @@ function formTest() {
     let name = document.getElementById('name');
     let email = document.getElementById('email');
 // let phone = document.getElementById('phone');
-    radio = document.getElementById('radio');
+//     radio = document.getElementById('radio');
     let people = document.getElementById('people');
     let days = document.getElementById('days');
 
@@ -308,40 +308,9 @@ const dominicanImg = [
 const brazilImg = [
     {
         // Photo from unsplash.com
-        // Photographer: Etienne Delorieux
-        imageUrl: 'https://images.unsplash.com/photo-1580259679654-9276b39fd2d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+        // Photographer: Raphael Nogueira
+        imageUrl: 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
     },
-    {
-        // Photo from unsplash.com
-        // Photographer: Berti Benbanaste
-        imageUrl: 'https://images.unsplash.com/photo-1552980870-139c7b393f0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Zdeněk Macháček
-        imageUrl: 'https://images.unsplash.com/photo-1552727131-5fc6af16796d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1949&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Zdeněk Macháček
-        imageUrl: 'https://images.unsplash.com/photo-1586768019524-c6e902168263?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1917&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Zdeněk Macháček
-        imageUrl: 'https://images.unsplash.com/photo-1550853123-b81beb0b1449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1934&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Atanas Malamov
-        imageUrl: 'https://images.unsplash.com/photo-1536709017021-ce8f99c17e38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Adrian Eriksson
-        imageUrl: 'https://images.unsplash.com/photo-1592227068146-bd177328e578?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
-    },
-
 ]
 
 const ecuadorImg = [
