@@ -14,38 +14,45 @@ Table Header = #7F2622
  */
 
 /*-------------
- 	General
+    General Styles
 -------------*/
 
+/* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
+
+/* Resets */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+/* Body */
+html {
     font: normal 16px 'Roboto', sans-serif;
     color: #20202d;
     scroll-behavior: smooth;
 }
 
-ul, nav{
+/* Lists */
+ul, nav {
     list-style: none;
 }
 
-a{
+/* Links */
+a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
     opacity: 0.75;
 }
 
-a:hover{
+a:hover {
     opacity: 1;
 }
 
-section{
+/* Sections */
+section {
     /*display: flex;*/
     /*flex-direction: column;*/
     /*align-items: center;*/
@@ -53,34 +60,18 @@ section{
     padding: 100px 100px;
 }
 
+/* Style even sections */
 section:not(.hero):nth-child(even) {
     background-color: #fefcf9;
 }
 
-/* style odd sections */
+/* Style odd sections */
 section:not(.hero):nth-child(odd) {
     background-color: #f9fdfd;
 }
 
-@media (max-width: 1000px){
-
-    section{
-        /* top and bottom | left and right */
-        padding: 100px 50px;
-    }
-
-}
-
-@media (max-width: 600px){
-
-    section{
-        /* top and bottom | left and right */
-        padding: 80px 30px;
-    }
-
-}
-
-section h3.title{
+/* Section titles */
+section h3.title {
     color: #4a4a68;
     text-transform: capitalize;
     font: bold 32px 'Roboto', sans-serif;
@@ -88,7 +79,8 @@ section h3.title{
     text-align: center;
 }
 
-section p{
+/* Section paragraphs */
+section p {
     text-align: center;
     margin-bottom: 35px;
     /* top and bottom | left and right */
@@ -96,18 +88,34 @@ section p{
     line-height: 2;
 }
 
-ul.grid{
+/* Grid lists */
+ul.grid {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* Media queries */
+@media (max-width: 1000px) {
+    section {
+        /* top and bottom | left and right */
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        /* top and bottom | left and right */
+        padding: 80px 30px;
+    }
+}
 
 /*-------------
- 	Header
+    Header
 -------------*/
 
+/* Header container */
 header {
     position: absolute;
     top: 0;
@@ -121,18 +129,7 @@ header {
     padding: 35px 100px 0;
 }
 
-header section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-header h2 {
-    font-family: 'Roboto', sans-serif;
-}
-
+/* Navigation section */
 header nav {
     display: flex;
 }
@@ -156,10 +153,19 @@ header nav ul li:last-child {
     margin-right: 0;
 }
 
-header h2 a {
+/* Header content section */
+header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h2 {
+    font-family: 'Roboto', sans-serif;
     opacity: 0.95;
 }
 
+/* Media queries */
 @media (max-width: 1000px) {
     header {
         padding: 20px 50px;
@@ -177,13 +183,12 @@ header h2 a {
 }
 
 
-
-
 /*----------------
- 	Hero Section
+    Hero Section
 ----------------*/
 
-.hero{
+/* Set the styles for the container of the hero section */
+.hero {
     position: relative;
     justify-content: center;
     min-height: 100vh;
@@ -194,12 +199,13 @@ header h2 a {
     align-items: center;
 }
 
+/* Set the styles for the slogan text */
 .slogan {
     color: #f9fdfd;
 }
 
-.hero .background-image{
-    /*background-image: url(../img/0-1.jpg);*/
+/* Set the styles for the background image of the hero section */
+.hero .background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -210,7 +216,8 @@ header h2 a {
     z-index: -1;
 }
 
-.hero .background-image:after{
+/* Set the styles for the overlay of the background image */
+.hero .background-image:after {
     content: '';
     position: absolute;
     top: 0;
@@ -221,92 +228,103 @@ header h2 a {
     opacity: 0.40;
 }
 
+/* Set the styles for the image location */
 .img-location {
-    position:absolute;
+    position: absolute;
     bottom: .5em;
     left: 0;
     margin: 0;
 }
 
-.hero h1{
+/* Set the styles for the hero section heading */
+.hero h1 {
     font: bold 60px 'Roboto', sans-serif;
     margin-bottom: 15px;
 }
 
-.hero h3{
+/* Set the styles for the hero section subheading */
+.hero h3 {
     font: normal 28px 'Roboto', sans-serif;
     margin-bottom: 40px;
 }
 
-.hero a.btn{
+/* Set the styles for the hero section button */
+.hero a.btn {
     padding: 20px 46px;
 }
 
-@media (max-width: 800px){
+/* Set the responsive styles for smaller screens */
+@media (max-width: 800px) {
 
-    .hero{
+    /* Set the minimum height for the hero section for smaller screens */
+    .hero {
         min-height: 600px;
     }
 
-    .hero h1{
+    /* Set the font size for the hero section heading for smaller screens */
+    .hero h1 {
         font-size: 48px;
     }
 
-    .hero h3{
+    /* Set the font size for the hero section subheading for smaller screens */
+    .hero h3 {
         font-size: 24px;
     }
 
-    .hero a.btn{
+    /* Set the padding for the hero section button for smaller screens */
+    .hero a.btn {
         padding: 15px 40px;
     }
 
+    /* Hide the image location for smaller screens */
     .img-location {
         opacity: 0;
     }
 
 }
 
-
-
 /*--------------------
  	Our Destinations Section
 ---------------------*/
 
-.destinations{
-    /*background-color: #fefcf9;*/
+/* Container for the entire section */
+.destinations {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Description text for the section */
 .destinations p {
     max-width: 85%;
     text-align: center;
     margin-bottom: 35px;
-    /* top and bottom | left and right */
     padding: 0 20px;
     line-height: 2;
 }
 
-.destinations .grid li{
+/* Grid container for destination items */
+.destinations .grid li {
     padding: 20px;
     height: 350px;
     border-radius: 3px;
-
     background-clip: content-box;
     background-size: cover;
     background-position: center;
     background-color: #333;
 }
 
-.destinations .grid li.small{
+/* Styles for small destination items in grid */
+.destinations .grid li.small {
     flex-basis: 40%;
 }
 
-.destinations .grid li.large{
+/* Styles for large destination items in grid */
+.destinations .grid li.large {
     flex-basis: 60%;
 }
 
+/* Navigation bar container */
 .destinations nav ul {
     width: 100%;
     list-style: none;
@@ -316,39 +334,41 @@ header h2 a {
     margin: 0;
 }
 
+/* Styles for navigation bar items */
 .destinations nav ul li {
     padding: 20px;
     font: bold 25px 'Roboto', sans-serif;
     font-weight: 500;
 }
 
+/* Styles for navigation bar links */
 .destinations nav ul a {
     text-decoration: none;
 }
 
-
+/* Additional styles for navigation bar */
 #nav {
     padding-top: 3em;
 }
 
-
-@media (max-width: 1000px){
-
+/* Media query for small screens */
+@media (max-width: 1000px) {
     .destinations .grid li.small,
-    .destinations .grid li.large{
+    .destinations .grid li.large {
         flex-basis: 100%;
     }
-
 }
 
+/* Additional styles for text in section */
 .destinations p {
     color: #20202d;
 }
 
 /*--------------------
- 	Testimonials Section
+    Testimonials Section
 --------------------*/
 
+/* Overall section styling */
 .testimonials section {
     max-width: 100%;
     color: #20202d;
@@ -357,7 +377,8 @@ header h2 a {
     align-items: center;
 }
 
-.testimonials .quote{
+/* Styling for the quote */
+.testimonials .quote {
     text-align: center;
     /*width: 80%;*/
     font-size: 22px;
@@ -367,34 +388,35 @@ header h2 a {
     /*padding: 0;*/
 }
 
-.testimonials .author{
+/* Styling for the author */
+.testimonials .author {
     font-size: 18px;
     margin-bottom: 50px;
 }
 
-.testimonials .author:last-child{
+/* Styling for the last author */
+.testimonials .author:last-child {
     margin-bottom: 0;
 }
 
-@media (max-width: 1000px){
-
-    .testimonials .quote{
+/* Media query for smaller screens */
+@media (max-width: 1000px) {
+    .testimonials .quote {
         font-size: 20px;
     }
 
-    .testimonials .author{
+    .testimonials .author {
         font-size: 16px;
     }
-
 }
 
 /*-------------
  	Footer
 -------------*/
 
-footer{
+/* Set the overall style for the footer */
+footer {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -403,99 +425,111 @@ footer{
     padding: 20px 10%;
 }
 
+/* Set the style for each section within the footer */
 footer section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Set the style for the contact information section */
 .contact {
     text-align: left;
     margin-left: 20px;
 }
 
-footer ul{
+/* Set the style for the unordered list of social media links */
+footer ul {
     color: #f9fdfd;
     display: flex;
     margin-right: 20px;
     font-size: 32px;
 }
 
-footer ul li{
+/* Set the style for each social media link */
+footer ul li {
     margin: 0 8px;
 }
 
-footer ul li:first-child{
+/* Set the style for the first social media link */
+footer ul li:first-child {
     margin-left: 0;
 }
 
-footer ul li:last-child{
+/* Set the style for the last social media link */
+footer ul li:last-child {
     margin-right: 0;
 }
 
-footer p{
+/* Set the style for the copyright notice */
+footer p {
     font-size: 14px;
     color: #f9fdfd;
     margin-bottom: 10px;
 }
 
-footer p a{
+/* Set the style for the link within the copyright notice */
+footer p a {
     color: #f9fdfd;
 }
 
-.copyright{
+/* Set the style for the right-aligned copyright notice */
+/* (note: this overrides the "text-align: center" rule set earlier for the footer) */
+copyright {
     text-align: right;
     margin-right: 20px;
 }
 
-@media (max-width: 700px){
-
-    footer{
+/* Set the responsive styles for smaller screens */
+@media (max-width: 700px) {
+    footer {
         padding: 80px 15px;
     }
-
 }
 
 /*--------------------
  	Individual Destinations Section
 ---------------------*/
 
-.destination{
-    /*background-color: #fefcf9;*/
+.destination {
+    /* container for the section */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .destination p {
+    /* paragraph text within section */
     max-width: 85%;
     text-align: center;
     margin-bottom: 35px;
-    /* top and bottom | left and right */
-    padding: 0 20px;
+    padding: 0 20px; /* top/bottom and left/right padding */
     line-height: 2;
 }
 
-.destination .grid li{
+.destination .grid li {
+    /* individual destination grid item */
     padding: 20px;
     height: 350px;
     border-radius: 3px;
-
     background-clip: content-box;
     background-size: cover;
     background-position: center;
     background-color: #333;
 }
 
-.destination .grid li.small{
+.destination .grid li.small {
+    /* small grid items */
     flex-basis: 40%;
 }
 
-.destination .grid li.large{
+.destination .grid li.large {
+    /* large grid items */
     flex-basis: 60%;
 }
 
 .destination nav ul {
+    /* navigation list for destinations */
     width: 100%;
     list-style: none;
     display: flex;
@@ -505,25 +539,27 @@ footer p a{
 }
 
 .destination nav ul li {
+    /* individual navigation list item */
     padding: 20px;
     font: bold 25px 'Roboto', sans-serif;
     font-weight: 500;
 }
 
 .destination nav ul a {
+    /* link within navigation list */
     text-decoration: none;
 }
 
-@media (max-width: 1000px){
-
+@media (max-width: 1000px) {
+    /* media query for smaller screen sizes */
     .destination .grid li.small,
-    .destination .grid li.large{
+    .destination .grid li.large {
         flex-basis: 100%;
     }
-
 }
 
 .destination p {
+    /* color for paragraph text */
     color: #20202d;
 }
 
@@ -531,22 +567,23 @@ footer p a{
  	Activities
 ---------------------*/
 
-.activities{
-    /*background-color: #f9fdfd;*/
+/* Set display properties */
+.activities {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Set properties for paragraphs within .activities */
 .activities p {
     max-width: 85%;
     text-align: center;
     margin-bottom: 35px;
-    /* top and bottom | left and right */
-    padding: 0 20px;
+    padding: 0 20px; /* top and bottom | left and right */
     line-height: 2;
 }
 
+/* Set properties for heading within .activities */
 .activities h1 {
     padding-top: 2em;
     color: #4a4a68;
@@ -556,25 +593,28 @@ footer p a{
     text-align: center;
 }
 
-.activities .grid li{
+/* Set properties for list items within .grid within .activities */
+.activities .grid li {
     padding: 20px;
     height: 350px;
     border-radius: 3px;
-
     background-clip: content-box;
     background-size: cover;
     background-position: center;
     background-color: #333;
 }
 
-.activities .grid li.small{
+/* Set properties for list items with class 'small' within .grid within .activities */
+.activities .grid li.small {
     flex-basis: 40%;
 }
 
-.activities .grid li.large{
+/* Set properties for list items with class 'large' within .grid within .activities */
+.activities .grid li.large {
     flex-basis: 60%;
 }
 
+/* Set properties for unordered list within nav within .activities */
 .activities nav ul {
     width: 100%;
     list-style: none;
@@ -584,29 +624,33 @@ footer p a{
     margin: 0;
 }
 
+/* Set properties for list items within unordered list within nav within .activities */
 .activities nav ul li {
     padding: 20px;
     font: bold 25px 'Roboto', sans-serif;
     font-weight: 500;
 }
 
+/* Set properties for anchor tags within unordered list within nav within .activities */
 .activities nav ul a {
     text-decoration: none;
 }
 
+/* Set color property for paragraphs within .activities */
+.activities p {
+    color: #20202d;
+}
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
 
     .activities .grid li.small,
-    .activities .grid li.large{
+    .activities .grid li.large {
+        /* Set properties for list items with class 'small' or 'large' within .grid within .activities when screen width is less than 1000px */
         flex-basis: 100%;
     }
 
 }
 
-.activities p {
-    color: #20202d;
-}
 
 /*--------------------
  	   Packages
@@ -827,6 +871,8 @@ form #submit:hover {
 /*--------------------
        Itinerary
 ---------------------*/
+
+/* Set container styles */
 .itinerary {
     display: flex;
     flex-direction: column;
@@ -834,6 +880,7 @@ form #submit:hover {
     margin: 0 auto;
 }
 
+/* Set styles for left and right sections */
 .split {
     width: 85%;
     margin: 0 auto;
@@ -857,6 +904,7 @@ form #submit:hover {
     padding: 20px;
 }
 
+/* Set style for itinerary heading */
 .itineraryH2 {
     margin-top: 0;
     margin-bottom: 10px;
@@ -864,6 +912,7 @@ form #submit:hover {
     color: #4a4a68;
 }
 
+/* Set style for main heading */
 h1 {
     display: inline;
     flex-wrap: nowrap;
