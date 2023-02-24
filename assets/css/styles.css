@@ -475,7 +475,7 @@ footer p a {
 
 /* Set the style for the right-aligned copyright notice */
 /* (note: this overrides the "text-align: center" rule set earlier for the footer) */
-copyright {
+.copyright {
     text-align: right;
     margin-right: 20px;
 }
