@@ -3,7 +3,7 @@ function loadIndex() {
     generateBackground()
 }
 
-function generateTestimonials()  {
+function generateTestimonials() {
     const selectedTestimonials = [];
     for (let i = 0; i < 4; i++) {
         let testimonial;
@@ -194,250 +194,174 @@ function formTest() {
 ////////////////////////////////////////////
 // Destination page image generation section
 ////////////////////////////////////////////
-const costaImg = [
+const displayImg = [
     {
-        // Photo from unsplash.com
-        // Photographer: Etienne Delorieux
+        country: 'Costa Rica',
         imageUrl: 'https://images.unsplash.com/photo-1580259679654-9276b39fd2d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
     },
     {
+        country: 'Costa Rica',
         // Photo from unsplash.com
         // Photographer: Berti Benbanaste
         imageUrl: 'https://images.unsplash.com/photo-1552980870-139c7b393f0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
     },
     {
+        country: 'Costa Rica',
         // Photo from unsplash.com
         // Photographer: Zdeněk Macháček
         imageUrl: 'https://images.unsplash.com/photo-1552727131-5fc6af16796d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1949&q=80',
     },
     {
+        country: 'Costa Rica',
         // Photo from unsplash.com
         // Photographer: Zdeněk Macháček
         imageUrl: 'https://images.unsplash.com/photo-1586768019524-c6e902168263?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1917&q=80',
     },
     {
+        country: 'Costa Rica',
         // Photo from unsplash.com
         // Photographer: Zdeněk Macháček
         imageUrl: 'https://images.unsplash.com/photo-1550853123-b81beb0b1449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1934&q=80',
     },
     {
+        country: 'Costa Rica',
         // Photo from unsplash.com
         // Photographer: Atanas Malamov
         imageUrl: 'https://images.unsplash.com/photo-1536709017021-ce8f99c17e38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
     },
     {
+        country: 'Costa Rica',
         // Photo from unsplash.com
         // Photographer: Adrian Eriksson
         imageUrl: 'https://images.unsplash.com/photo-1592227068146-bd177328e578?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
     },
-
-]
-
-const panamaImg = [
+    // Costa Rica images end here
     {
+        country: 'Panama',
         // Photo from unsplash.com
         // Photographer: Chema Photo
         imageUrl: 'https://images.unsplash.com/photo-1580984398689-ebe40355d404?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
     },
     {
+        country: 'Panama',
         // Photo from unsplash.com
         // Photographer: Chema Photo
         imageUrl: 'https://images.unsplash.com/photo-1580108888829-2a1f82029c44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
     },
     {
+        country: 'Panama',
         // Photo from unsplash.com
         // Photographer: Niels van Altena
         imageUrl: 'https://images.unsplash.com/photo-1599560324079-af5f94f2c37e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
     },
     {
+        country: 'Panama',
         // Photo from unsplash.com
         // Photographer: Fabrice Parchet
         imageUrl: 'https://images.unsplash.com/photo-1587759301533-ae42d7065a80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
     },
     {
+        country: 'Panama',
         // Photo from unsplash.com
         // Photographer: Azzedine Rouichi
         imageUrl: 'https://images.unsplash.com/photo-1581620365187-71d518c0fef1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
     },
     {
+        country: 'Panama',
         // Photo from unsplash.com
         // Photographer: Fabio Fistarol
         imageUrl: 'https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80',
     },
     {
+        country: 'Panama',
         // Photo from unsplash.com
         // Photographer: Darren Miller
         imageUrl: 'https://images.unsplash.com/photo-1582059983736-eedd5df2212b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
     },
-]
-
-const dominicanImg = [
+    // Panama images end here
     {
+        country: 'Dominican Republic',
         // Photo from unsplash.com
         // Photographer: Kamil Kalbarczyk
         imageUrl: 'https://images.unsplash.com/photo-1529420705456-5c7e04dd043d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80',
     },
     {
+        country: 'Dominican Republic',
         // Photo from unsplash.com
         // Photographer: Michelangelo Azzariti
         imageUrl: 'https://images.unsplash.com/photo-1636378163213-ded48bf09b05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80',
     },
     {
+        country: 'Dominican Republic',
         // Photo from unsplash.com
         // Photographer: Robin Canfield
         imageUrl: 'https://images.unsplash.com/photo-1602608099803-96718a589bb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
     },
     {
+        country: 'Dominican Republic',
         // Photo from unsplash.com
         // Photographer: Valeriy Labushkin
         imageUrl: 'https://images.unsplash.com/photo-1555669320-429edc655c9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=926&q=80',
     },
     {
+        country: 'Dominican Republic',
         // Photo from unsplash.com
         // Photographer: Asael Peña
         imageUrl: 'https://images.unsplash.com/photo-1617718295766-0f839c2853e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2666&q=80',
     },
     {
+        country: 'Dominican Republic',
         // Photo from unsplash.com
         // Photographer: Damian Dominguez
         imageUrl: 'https://images.unsplash.com/photo-1585573098393-e11fc82c11af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
     },
+    // Dominican Republic images end here
 
-]
-
-const brazilImg = [
+    // ADD BRAZIL IMAGES HERE
     {
+        country: 'Brazil',
         // Photo from unsplash.com
         // Photographer: Raphael Nogueira
         imageUrl: 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
     },
-]
+    // Brazil images end here
 
-const ecuadorImg = [
+    // ADD ECUADOR IMAGES HERE
     {
+        country: 'Ecuador',
         // Photo from unsplash.com
         // Photographer: Etienne Delorieux
         imageUrl: 'https://images.unsplash.com/photo-1580259679654-9276b39fd2d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
     },
-    {
-        // Photo from unsplash.com
-        // Photographer: Berti Benbanaste
-        imageUrl: 'https://images.unsplash.com/photo-1552980870-139c7b393f0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Zdeněk Macháček
-        imageUrl: 'https://images.unsplash.com/photo-1552727131-5fc6af16796d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1949&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Zdeněk Macháček
-        imageUrl: 'https://images.unsplash.com/photo-1586768019524-c6e902168263?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1917&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Zdeněk Macháček
-        imageUrl: 'https://images.unsplash.com/photo-1550853123-b81beb0b1449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1934&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Atanas Malamov
-        imageUrl: 'https://images.unsplash.com/photo-1536709017021-ce8f99c17e38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Adrian Eriksson
-        imageUrl: 'https://images.unsplash.com/photo-1592227068146-bd177328e578?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
-    },
+    // Ecuador images end here
 
-]
-
-const arubaImg = [
+    // ADD ARUBA IMAGES HERE
     {
+        country: 'Aruba',
         // Photo from unsplash.com
         // Photographer: Etienne Delorieux
         imageUrl: 'https://images.unsplash.com/photo-1580259679654-9276b39fd2d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
     },
-    {
-        // Photo from unsplash.com
-        // Photographer: Berti Benbanaste
-        imageUrl: 'https://images.unsplash.com/photo-1552980870-139c7b393f0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Zdeněk Macháček
-        imageUrl: 'https://images.unsplash.com/photo-1552727131-5fc6af16796d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1949&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Zdeněk Macháček
-        imageUrl: 'https://images.unsplash.com/photo-1586768019524-c6e902168263?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1917&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Zdeněk Macháček
-        imageUrl: 'https://images.unsplash.com/photo-1550853123-b81beb0b1449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1934&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Atanas Malamov
-        imageUrl: 'https://images.unsplash.com/photo-1536709017021-ce8f99c17e38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Adrian Eriksson
-        imageUrl: 'https://images.unsplash.com/photo-1592227068146-bd177328e578?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
-    },
+    // Aruba images end here
 
-]
-
-const colombiaImg = [
+    // ADD COLOMBIA IMAGES HERE
     {
+        country: 'Colombia',
         // Photo from unsplash.com
         // Photographer: Etienne Delorieux
         imageUrl: 'https://images.unsplash.com/photo-1580259679654-9276b39fd2d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
     },
-    {
-        // Photo from unsplash.com
-        // Photographer: Berti Benbanaste
-        imageUrl: 'https://images.unsplash.com/photo-1552980870-139c7b393f0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Zdeněk Macháček
-        imageUrl: 'https://images.unsplash.com/photo-1552727131-5fc6af16796d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1949&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Zdeněk Macháček
-        imageUrl: 'https://images.unsplash.com/photo-1586768019524-c6e902168263?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1917&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Zdeněk Macháček
-        imageUrl: 'https://images.unsplash.com/photo-1550853123-b81beb0b1449?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1934&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Atanas Malamov
-        imageUrl: 'https://images.unsplash.com/photo-1536709017021-ce8f99c17e38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
-    },
-    {
-        // Photo from unsplash.com
-        // Photographer: Adrian Eriksson
-        imageUrl: 'https://images.unsplash.com/photo-1592227068146-bd177328e578?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
-    },
-
-]
+    // Colombia images end here
+];
 
 const imageArrays = {
-    costa: costaImg,
-    panama: panamaImg,
-    dominican: dominicanImg,
-    brazil: brazilImg,
-    ecuador: ecuadorImg,
-    aruba: arubaImg,
-    colombia: colombiaImg,
+    costa: displayImg.filter((img) => img.country === 'Costa Rica').map((img) => ({imageUrl: img.imageUrl})),
+    panama: displayImg.filter((img) => img.country === 'Panama').map((img) => ({imageUrl: img.imageUrl})),
+    dominican: displayImg.filter((img) => img.country === 'Dominican Republic').map((img) => ({imageUrl: img.imageUrl})),
+    brazil: displayImg.filter((img) => img.country === 'Brazil').map((img) => ({imageUrl: img.imageUrl})),
+    ecuador: displayImg.filter((img) => img.country === 'Ecuador').map((img) => ({imageUrl: img.imageUrl})),
+    aruba: displayImg.filter((img) => img.country === 'Aruba').map((img) => ({imageUrl: img.imageUrl})),
+    colombia: displayImg.filter((img) => img.country === 'Colombia').map((img) => ({imageUrl: img.imageUrl})),
 };
 
 function setRandomImages(imageArray) {
@@ -460,6 +384,7 @@ function setDestImgs(place) {
     }
     // generateBackground(place);
 }
+
 ////////////////////////////////////////////////
 // End destination page image generation section
 ////////////////////////////////////////////////
