@@ -922,3 +922,11 @@ h1 {
     margin-bottom: 35px;
     text-align: center;
 }
+
+/*--------------------
+      Video Section
+---------------------*/
+video {
+    display: block;
+    margin: 0 auto;
+}
