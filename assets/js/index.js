@@ -1,7 +1,7 @@
 ////////////////////////////////////////////
 // Arrays Section
 ////////////////////////////////////////////
-const pictures = [ // Slowly replacing these with the images url instead of downloading them
+const pictures = [
     {
         imgUrl: 'url(https://images.unsplash.com/photo-1580094333632-438bdc04f79f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80)',
         // imgUrl: 'url(assets/img/0.webp)',
@@ -33,21 +33,21 @@ const pictures = [ // Slowly replacing these with the images url instead of down
         slogan: 'Uncover the Vibrant Culture of Brazil'
     },
     {
-        imgUrl: 'url(assets/img/4.webp)',
+        imgUrl: 'url(https://images.unsplash.com/photo-1580918860823-f0072f5a6719?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)',
         // Photo from unsplash.com
         // Photographer: Robinson Recalde
         imgLocation: 'Ecuador',
         slogan: 'Explore the Wonders of Ecuador'
     },
     {
-        imgUrl: 'url(assets/img/5.webp)',
+        imgUrl: 'url(https://images.unsplash.com/photo-1633421332483-1aa89f0c6b9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80)',
         // Photo from unsplash.com
         // Photographer: Kiril Georgiev
         imgLocation: 'Aruba',
         slogan: 'Relax and Recharge on the Beaches of Aruba'
     },
     {
-        imgUrl: 'url(assets/img/6.webp)',
+        imgUrl: 'url(https://images.unsplash.com/photo-1576018753502-1a55b66cc44a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80)',
         // Photo from unsplash.com
         // Photographer: Saul Mercado
         imgLocation: 'Colombia',
@@ -100,6 +100,8 @@ const testimonials = [
 
 const displayImg = [
     {
+        // Photo from unsplash.com
+        // Photographer: Etienne Delorieux
         country: 'Costa Rica',
         imageUrl: 'https://images.unsplash.com/photo-1580259679654-9276b39fd2d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
     },
@@ -220,14 +222,43 @@ const displayImg = [
         imageUrl: 'https://images.unsplash.com/photo-1585573098393-e11fc82c11af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
     },
     // Dominican Republic images end here
-
-    // ADD BRAZIL IMAGES HERE
     {
         country: 'Brazil',
         // Photo from unsplash.com
         // Photographer: Raphael Nogueira
         imageUrl: 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
     },
+    {
+        country: 'Brazil',
+        // Photo from unsplash.com
+        // Photographer: Agustin Diaz Gargiulo
+        imageUrl: 'https://images.unsplash.com/photo-1516834611397-8d633eaec5d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80',
+    },
+    {
+        country: 'Brazil',
+        // Photo from unsplash.com
+        // Photographer: Jonathan Borba
+        imageUrl: 'https://images.unsplash.com/photo-1551529489-5c97b567c760?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+    },
+    {
+        country: 'Brazil',
+        // Photo from unsplash.com
+        // Photographer: F Cary Snyder
+        imageUrl: 'https://images.unsplash.com/photo-1619546952812-520e98064a52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80',
+    },
+    {
+        country: 'Brazil',
+        // Photo from unsplash.com
+        // Photographer: Milos Hajder
+        imageUrl: 'https://images.unsplash.com/photo-1585436249848-3a8210d46a47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1033&q=80',
+    },
+    {
+        country: 'Brazil',
+        // Photo from unsplash.com
+        // Photographer: Du Zaniol
+        imageUrl: 'https://images.unsplash.com/photo-1662428484642-da5cdacc147f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+    },
+
     // Brazil images end here
 
     // ADD ECUADOR IMAGES HERE
