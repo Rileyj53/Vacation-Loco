@@ -1,78 +1,6 @@
-function loadIndex() {
-    generateTestimonials()
-    generateBackground()
-}
-
-function generateTestimonials() {
-    const selectedTestimonials = [];
-    for (let i = 0; i < 4; i++) {
-        let testimonial;
-        do {
-            testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
-        } while (selectedTestimonials.includes(testimonial));
-        selectedTestimonials.push(testimonial);
-    }
-
-    document.getElementById("testimonial1").innerHTML = selectedTestimonials[0].testimonial;
-    document.getElementById("author1").innerHTML = selectedTestimonials[0].author;
-    document.getElementById("testimonial2").innerHTML = selectedTestimonials[1].testimonial;
-    document.getElementById("author2").innerHTML = selectedTestimonials[1].author;
-    document.getElementById("testimonial3").innerHTML = selectedTestimonials[2].testimonial;
-    document.getElementById("author3").innerHTML = selectedTestimonials[2].author;
-}
-
-function generateBackground(page) {
-    switch (page) {
-        case 'costa':
-            page = '0';
-            break;
-        case 'panama':
-            page = '1';
-            break;
-        case 'dominican':
-            page = '2';
-            break;
-        case 'brazil':
-            page = '3';
-            break;
-        case 'ecuador':
-            page = '4';
-            break;
-        case 'aruba':
-            page = '5';
-            break;
-        case 'colombia':
-            page = '6';
-            break;
-        default:
-            page = null;
-            break;
-    }
-
-    let randomImg;
-    if (!page) {
-        randomImg = Math.floor(Math.random() * pictures.length);
-    } else {
-        randomImg = parseInt(page);
-    }
-    // console.log(randomImg)
-    // console.log(page)
-
-    const {imgUrl, imgLocation, slogan} = pictures[randomImg];
-    // const {imgUrl, imgLocation, slogan} = pictures[0];
-
-    document.getElementsByClassName("background-image")[0].style.backgroundImage = imgUrl;
-    document.getElementsByClassName("img-location")[0].innerHTML = imgLocation;
-    document.getElementsByClassName("slogan")[0].innerHTML = slogan;
-}
-
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
-
+////////////////////////////////////////////
+// Arrays Section
+////////////////////////////////////////////
 const pictures = [ // Slowly replacing these with the images url instead of downloading them
     {
         imgUrl: 'url(https://images.unsplash.com/photo-1580094333632-438bdc04f79f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80)',
@@ -170,30 +98,6 @@ const testimonials = [
     },
 ]
 
-//form function test
-function formTest() {
-    let radio = '';
-    let name = document.getElementById('name');
-    let email = document.getElementById('email');
-// let phone = document.getElementById('phone');
-//     radio = document.getElementById('radio');
-    let people = document.getElementById('people');
-    let days = document.getElementById('days');
-
-    alert(`Thank you ${name.value} for your inquiry about a trip for ${people.value} people and ${days.value} nights. We will be in touch with you shortly at ${email.value} with more information about your trip.`)
-
-    // change the css for the class success-message from display: none to display: block
-    // document.querySelector('.success-message').style.display = 'block';
-    // document.querySelector('.contact-form').style.display = 'none';
-    // document.getElementById('success1').innerHTML = `Thank you ${name.value} for your inquiry about a trip to ${radio.value} for ${people.value} people and ${days.value} nights.`;
-    // document.getElementById('success2').innerHTML = `We will be in touch with you shortly at ${email.value} with more information about your trip.`;
-
-}
-
-
-////////////////////////////////////////////
-// Destination page image generation section
-////////////////////////////////////////////
 const displayImg = [
     {
         country: 'Costa Rica',
@@ -364,9 +268,28 @@ const imageArrays = {
     colombia: displayImg.filter((img) => img.country === 'Colombia').map((img) => ({imageUrl: img.imageUrl})),
 };
 
-function setRandomImages(imageArray) {
+const allImageUrls = [...displayImg].map(img => ({ imageUrl: img.imageUrl }));
+
+// I would have put these in a separate file, but I wanted the HTML files to me loadable without a functioning  server
+////////////////////////////////////////////
+// End of arrays Section
+////////////////////////////////////////////
+////////////////////////////////////////////
+// Actual Code starts here
+////////////////////////////////////////////
+
+// The shuffleArray function Shuffles the passed array
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+// The setRandomImages function is used to set the random images in the grid section of each page
+function setRandomImages(imageArray, amount) {
     shuffleArray(imageArray);
-    const numImages = Math.min(imageArray.length, 4);
+    const numImages = Math.min(imageArray.length, amount);
     for (let i = 0; i < numImages; i++) {
         const imageUrl = imageArray[i].imageUrl;
         const imageId = `image${i + 1}`;
@@ -374,10 +297,86 @@ function setRandomImages(imageArray) {
     }
 }
 
-function setDestImgs(place) {
+// The generateTestimonials function "generates" random testimonials from the array of testimonials for the index page
+function generateTestimonials() {
+    const selectedTestimonials = [];
+    for (let i = 0; i < 4; i++) {
+        let testimonial;
+        do {
+            testimonial = testimonials[Math.floor(Math.random() * testimonials.length)];
+        } while (selectedTestimonials.includes(testimonial));
+        selectedTestimonials.push(testimonial);
+    }
+
+    document.getElementById("testimonial1").innerHTML = selectedTestimonials[0].testimonial;
+    document.getElementById("author1").innerHTML = selectedTestimonials[0].author;
+    document.getElementById("testimonial2").innerHTML = selectedTestimonials[1].testimonial;
+    document.getElementById("author2").innerHTML = selectedTestimonials[1].author;
+    document.getElementById("testimonial3").innerHTML = selectedTestimonials[2].testimonial;
+    document.getElementById("author3").innerHTML = selectedTestimonials[2].author;
+}
+
+// The generateBackground function generates a random background image if the page is not specified
+function generateBackground(page) {
+    switch (page) {
+        case 'costa':
+            page = '0';
+            break;
+        case 'panama':
+            page = '1';
+            break;
+        case 'dominican':
+            page = '2';
+            break;
+        case 'brazil':
+            page = '3';
+            break;
+        case 'ecuador':
+            page = '4';
+            break;
+        case 'aruba':
+            page = '5';
+            break;
+        case 'colombia':
+            page = '6';
+            break;
+        default:
+            page = null;
+            break;
+    }
+
+    let randomImg;
+    if (!page) {
+        randomImg = Math.floor(Math.random() * pictures.length);
+    } else {
+        randomImg = parseInt(page);
+    }
+    // console.log(randomImg)
+    // console.log(page)
+
+    const {imgUrl, imgLocation, slogan} = pictures[randomImg];
+    // const {imgUrl, imgLocation, slogan} = pictures[0];
+
+    document.getElementsByClassName("background-image")[0].style.backgroundImage = imgUrl;
+    document.getElementsByClassName("img-location")[0].innerHTML = imgLocation;
+    document.getElementsByClassName("slogan")[0].innerHTML = slogan;
+}
+
+// The formSend function creates a popup using the form information that is entered by the user
+function formSend() {
+    let name = document.getElementById('name');
+    let email = document.getElementById('email');
+    let people = document.getElementById('people');
+    let days = document.getElementById('days');
+
+    alert(`Thank you ${name.value} for your inquiry about a trip for ${people.value} people and ${days.value} nights. We will be in touch with you shortly at ${email.value} with more information about your trip.`)
+}
+
+// The setDestImgs function is used to set the images on the destination pages including the background and the grid images
+function setDestImgs(place, num) {
     const imageArray = imageArrays[place];
     if (imageArray) {
-        setRandomImages(imageArray);
+        setRandomImages(imageArray, num);
         generateBackground(place);
     } else {
         generateBackground(place);
@@ -385,9 +384,9 @@ function setDestImgs(place) {
     // generateBackground(place);
 }
 
-////////////////////////////////////////////////
-// End destination page image generation section
-////////////////////////////////////////////////
-//
-// const imageArray = imageArrays['costa'];
-// console.log(imageArray);
+// The loadIndex function is used to load the index page with the random testimonials, background image, and grid images
+function loadIndex() {
+    generateTestimonials()
+    generateBackground()
+    setRandomImages(allImageUrls,6)
+}

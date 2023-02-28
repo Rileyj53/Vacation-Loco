@@ -10,7 +10,7 @@
     <script src="../js/index.js"></script>
     <script src="https://kit.fontawesome.com/c25ee65fb9.js" crossorigin="anonymous"></script>
 </head>
-<body onload="setDestImgs('costa')">
+<body onload="setDestImgs('costa', 4)">
 <!--<body>-->
 
 <header>
@@ -62,10 +62,10 @@
         resorts where visitors can unwind and take in the stunning scenery.</p>
 
     <ul class="grid">
-        <li id="image1" class="small" style="background-image: url();"></li>
-        <li id="image2" class="large" style="background-image: url();"></li>
-        <li id="image3" class="large" style="background-image: url();"></li>
-        <li id="image4" class="small" style="background-image: url();"></li>
+        <li id="image1" class="small"></li>
+        <li id="image2" class="large"></li>
+        <li id="image3" class="large"></li>
+        <li id="image4" class="small"></li>
     </ul>
 </section>
 
@@ -349,7 +349,7 @@
         and knowledgeable staff are always happy to help you plan your dream vacation in Costa Rica. You can reach us
         via phone, email, or by filling out the contact form on our website. We look forward to hearing from you!</p>
     <div class="form-container">
-        <form class="contact-form" onsubmit="formTest()">
+        <form class="contact-form" onsubmit="formSend()">
             <div class="half left">
 
                 <label for="name"></label>

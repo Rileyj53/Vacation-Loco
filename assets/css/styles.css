@@ -926,7 +926,17 @@ h1 {
 /*--------------------
       Video Section
 ---------------------*/
+/* Set the default styles for the video element */
 video {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+/* Define a media query for smaller screens so it still fits */
+@media screen and (max-width: 640px) {
+    video {
+        width: 100%;
+        height: auto;
+    }
 }
