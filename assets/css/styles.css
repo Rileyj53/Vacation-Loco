@@ -13,6 +13,13 @@ Table Row Odd = #ecf9f9
 Table Header = #7F2622
  */
 
+/*Author: Riley Jacobson*/
+/*Date: 02/28/2023*/
+/*Description: CSS for the website*/
+/*Author Note: In all of my previous projects ive used multiple CSS documents to make it shorter but that was a little confusing to keep track of so on this project im using just one file*/
+
+/*Everything is labeled by section as well as comments with short descriptions*/
+
 /*-------------
     General Styles
 -------------*/
@@ -933,10 +940,32 @@ video {
     max-width: 100%;
     height: auto;
 }
+
 /* Define a media query for smaller screens so it still fits */
 @media screen and (max-width: 640px) {
     video {
         width: 100%;
         height: auto;
     }
+}
+
+/*--------------------
+      Covid 19 Section
+---------------------*/
+/*C19 section formatting*/
+.c19 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*C19 paragraph section formatting*/
+.c19 p {
+    font-size: 22px;
+    font-weight: 300;
+    max-width: 85%;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 2;
 }

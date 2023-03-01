@@ -1,4 +1,11 @@
 ////////////////////////////////////////////
+// By: Riley Jacobson
+// Date: 02/28/2023
+// Description: This is the main JavaScript file for the Vacation Loco website. All of the functions are labled and have short descriptions of what they do.
+// Author Note: I wanted to use JavaScript because I needed a good project using JS for my portfolio. I also wanted to use JS because I wanted to learn more about it.
+////////////////////////////////////////////
+
+////////////////////////////////////////////
 // Arrays Section
 ////////////////////////////////////////////
 const pictures = [
@@ -142,6 +149,7 @@ const displayImg = [
         imageUrl: 'https://images.unsplash.com/photo-1592227068146-bd177328e578?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
     },
     // Costa Rica images end here
+
     {
         country: 'Panama',
         // Photo from unsplash.com
@@ -185,6 +193,7 @@ const displayImg = [
         imageUrl: 'https://images.unsplash.com/photo-1582059983736-eedd5df2212b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
     },
     // Panama images end here
+
     {
         country: 'Dominican Republic',
         // Photo from unsplash.com
@@ -222,6 +231,7 @@ const displayImg = [
         imageUrl: 'https://images.unsplash.com/photo-1585573098393-e11fc82c11af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
     },
     // Dominican Republic images end here
+
     {
         country: 'Brazil',
         // Photo from unsplash.com
@@ -258,35 +268,250 @@ const displayImg = [
         // Photographer: Du Zaniol
         imageUrl: 'https://images.unsplash.com/photo-1662428484642-da5cdacc147f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
     },
-
     // Brazil images end here
 
-    // ADD ECUADOR IMAGES HERE
     {
         country: 'Ecuador',
         // Photo from unsplash.com
-        // Photographer: Etienne Delorieux
-        imageUrl: 'https://images.unsplash.com/photo-1580259679654-9276b39fd2d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+        // Photographer: Mauricio Muñoz
+        imageUrl: 'https://images.unsplash.com/photo-1610226977124-9fd2755d09f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
+    },
+    {
+        country: 'Ecuador',
+        // Photo from unsplash.com
+        // Photographer: Azzedine Rouichi
+        imageUrl: 'https://images.unsplash.com/photo-1623263704614-a3feeeceb9c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2003&q=80',
+    },
+    {
+        country: 'Ecuador',
+        // Photo from unsplash.com
+        // Photographer: Kiyoshi
+        imageUrl: 'https://images.unsplash.com/photo-1628004581461-13dd6f81ed07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
+    },
+    {
+        country: 'Ecuador',
+        // Photo from unsplash.com
+        // Photographer: Mauricio Muñoz
+        imageUrl: 'https://images.unsplash.com/photo-1642711374977-1ecf92c2370c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2352&q=80',
+    },
+    {
+        country: 'Ecuador',
+        // Photo from unsplash.com
+        // Photographer: Mauricio Muñoz
+        imageUrl: 'https://images.unsplash.com/photo-1623079264301-4d350346dc2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
+    },
+    {
+        country: 'Ecuador',
+        // Photo from unsplash.com
+        // Photographer: Jonathan MONCK-MASON
+        imageUrl: 'https://images.unsplash.com/photo-1648430721093-65cce6177901?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
     },
     // Ecuador images end here
 
-    // ADD ARUBA IMAGES HERE
     {
         country: 'Aruba',
         // Photo from unsplash.com
-        // Photographer: Etienne Delorieux
-        imageUrl: 'https://images.unsplash.com/photo-1580259679654-9276b39fd2d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+        // Photographer: martin passchier
+        imageUrl: 'https://images.unsplash.com/photo-1516409134144-dd775651d24d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2666&q=80',
+    },
+    {
+        country: 'Aruba',
+        // Photo from unsplash.com
+        // Photographer: Lex Melony
+        imageUrl: 'https://images.unsplash.com/photo-1625869209989-058821f6c125?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+    },
+    {
+        country: 'Aruba',
+        // Photo from unsplash.com
+        // Photographer: Lex Melony
+        imageUrl: 'https://images.unsplash.com/photo-1629971459025-2c73de204a6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1915&q=80',
+    },
+    {
+        country: 'Aruba',
+        // Photo from unsplash.com
+        // Photographer: Darice de Cuba
+        imageUrl: 'https://images.unsplash.com/photo-1637169144626-c0c647453f76?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
+    },
+    {
+        country: 'Aruba',
+        // Photo from unsplash.com
+        // Photographer: Lex Melony
+        imageUrl: 'https://images.unsplash.com/photo-1625487942175-a32f610ae846?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1545&q=80',
+    },
+    {
+        country: 'Aruba',
+        // Photo from unsplash.com
+        // Photographer: Marvin Maduro
+        imageUrl: 'https://images.unsplash.com/photo-1623893189618-750aa9a2950e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80',
     },
     // Aruba images end here
 
-    // ADD COLOMBIA IMAGES HERE
     {
         country: 'Colombia',
         // Photo from unsplash.com
-        // Photographer: Etienne Delorieux
-        imageUrl: 'https://images.unsplash.com/photo-1580259679654-9276b39fd2d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+        // Photographer: Flavia Carpio
+        imageUrl: 'https://images.unsplash.com/photo-1533699224246-6dc3b3ed3304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2662&q=80',
+    },
+    {
+        country: 'Colombia',
+        // Photo from unsplash.com
+        // Photographer: Leandro Loureiro
+        imageUrl: 'https://images.unsplash.com/photo-1583531352515-8884af319dc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+    },
+    {
+        country: 'Colombia',
+        // Photo from unsplash.com
+        // Photographer: Flavia Carpio
+        imageUrl: 'https://images.unsplash.com/photo-1533699224246-6dc3b3ed3304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2662&q=80',
+    },
+    {
+        country: 'Colombia',
+        // Photo from unsplash.com
+        // Photographer: Dawin Rizzo
+        imageUrl: 'https://images.unsplash.com/photo-1587468388656-0013fb7dd1af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80',
+    },
+    {
+        country: 'Colombia',
+        // Photo from unsplash.com
+        // Photographer: Ricardo Gomez Angel
+        imageUrl: 'https://images.unsplash.com/photo-1534413340928-7bd74b65196f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80',
+    },
+    {
+        country: 'Colombia',
+        // Photo from unsplash.com
+        // Photographer: Kobby Mendez
+        imageUrl: 'https://images.unsplash.com/photo-1551282643-392c82ebb909?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+    },
+    {
+        country: 'Colombia',
+        // Photo from unsplash.com
+        // Photographer: Random Institute
+        imageUrl: 'https://images.unsplash.com/photo-1568632234165-47bb34c35708?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
     },
     // Colombia images end here
+
+    // The following images aren't assigned to a country but are used for the home page
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Tom Podmore
+        imageUrl: 'https://images.unsplash.com/photo-1656845088161-948c617420d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Leslie Cross
+        imageUrl: 'https://images.unsplash.com/photo-1587493513878-d68611233b03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Ricardo Arce
+        imageUrl: 'https://images.unsplash.com/photo-1580829185826-4b78b69ccc69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Dana Fallentine
+        imageUrl: 'https://images.unsplash.com/photo-1578444872448-a2d5ca6dd61d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Selina Bubendorfer
+        imageUrl: 'https://images.unsplash.com/photo-1602190629358-31a50de315e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Mike Swigunski
+        imageUrl: 'https://images.unsplash.com/photo-1590047301995-bba02b030fa5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Samuel Charron
+        imageUrl: 'https://images.unsplash.com/photo-1519177827-eaba5b224092?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Etienne Delorieux
+        imageUrl: 'https://images.unsplash.com/photo-1580676875879-f20086f1e729?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Juan Marin
+        imageUrl: 'https://images.unsplash.com/photo-1581352624136-84b3c9a7df3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Rikin Katyal
+        imageUrl: 'https://images.unsplash.com/photo-1641176716788-d4816a66dc6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Ángel López
+        imageUrl: 'https://images.unsplash.com/photo-1566956031644-74266ac466f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Angel Silva
+        imageUrl: 'https://images.unsplash.com/photo-1517154868524-c6b5fbd62a1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Damian Dominguez
+        imageUrl: 'https://images.unsplash.com/photo-1571197450530-4977e25429d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Iana Andreeva
+        imageUrl: 'https://images.unsplash.com/photo-1585573098393-e11fc82c11af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Robin Canfield
+        imageUrl: 'https://images.unsplash.com/photo-1590268878495-2dca8f550d94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Thomas Lefebvre
+        imageUrl: 'https://images.unsplash.com/photo-1421284621639-884f4129b61d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Kseniia Lobko
+        imageUrl: 'https://images.unsplash.com/photo-1635432931242-5d18fe4f47c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2350&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Paltiel De Oliveira
+        imageUrl: 'https://images.unsplash.com/photo-1638735780286-2848aa78b0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Kalea Morgan
+        imageUrl: 'https://images.unsplash.com/photo-1602088414617-d78f7a0faef2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2346&q=80',
+    },
+    {
+        country: 'Index',
+        // Photo from unsplash.com
+        // Photographer: Abner Valero
+        imageUrl: 'https://images.unsplash.com/photo-1498259787149-407ab89f3abf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80',
+    },
+
 ];
 
 const imageArrays = {
@@ -299,12 +524,14 @@ const imageArrays = {
     colombia: displayImg.filter((img) => img.country === 'Colombia').map((img) => ({imageUrl: img.imageUrl})),
 };
 
-const allImageUrls = [...displayImg].map(img => ({ imageUrl: img.imageUrl }));
+const allImageUrls = [...displayImg].map(img => ({imageUrl: img.imageUrl}));
 
-// I would have put these in a separate file, but I wanted the HTML files to me loadable without a functioning  server
+// I would have put these in a separate file, but I wanted the HTML files to me loadable without a functioning server
+
 ////////////////////////////////////////////
 // End of arrays Section
 ////////////////////////////////////////////
+
 ////////////////////////////////////////////
 // Actual Code starts here
 ////////////////////////////////////////////
@@ -419,5 +646,9 @@ function setDestImgs(place, num) {
 function loadIndex() {
     generateTestimonials()
     generateBackground()
-    setRandomImages(allImageUrls,6)
+    setRandomImages(allImageUrls, 8)
 }
+
+////////////////////////////////////////////
+// Actual Code ends here
+////////////////////////////////////////////
